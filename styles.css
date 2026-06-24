@@ -43,7 +43,7 @@ html, body {
 .logo-wrap {
   position: relative;
   display: inline-flex;
-  align-items: flex-start;
+  align-items: flex-end;
   line-height: 1;
 }
 
@@ -62,9 +62,8 @@ html, body {
   height: 7vh;
   background: var(--coral);
   border-radius: 50%;
-  margin-top: 12vh;
-  margin-left: -2vh;
-  align-self: flex-start;
+  margin-left: 3vh;
+  margin-bottom: 4vh;
   flex-shrink: 0;
 }
 
@@ -119,14 +118,6 @@ h1 em {
   line-height: 1.55;
   margin-bottom: 32px;
   max-width: 480px;
-}
-
-.hero-note {
-  font-family: 'Fraunces', Georgia, serif;
-  font-style: italic;
-  color: var(--wine-soft);
-  font-size: 16px;
-  margin-left: -4px;
 }
 
 /* Phones */
@@ -574,7 +565,7 @@ footer { padding-top: 32px; border-top: 1px solid rgba(74, 27, 12, 0.08); }
   }
 
   .logo-d { font-size: 44vh; }
-  .logo-dot { width: 5vh; height: 5vh; margin-top: 9vh; }
+  .logo-dot { width: 5vh; height: 5vh; margin-left: 2vh; margin-bottom: 3vh; }
 
   .content-pane { margin-left: 0; width: 100vw; padding: 48px 24px; }
 
