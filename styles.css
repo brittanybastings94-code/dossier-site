@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #FAECE7;
+  --coral: #D85A30;
+  --wine: #4A1B0C;
+  --wine-soft: #4A1B0Caa;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--wine);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px 48px;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--coral);
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(48px, 8vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  margin-left: -4px;
+}
+
+h1 em {
+  font-style: italic;
+  margin-left: -4px;
+}
+
+.subtitle {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-size: 24px;
+  color: var(--wine-soft);
+  margin-bottom: 32px;
+  margin-left: -4px;
+}
+
+.lede {
+  font-size: 18px;
+  line-height: 1.55;
+  margin-bottom: 48px;
+  max-width: 540px;
+}
+
+.cta {
+  margin-bottom: 96px;
+}
+
+.cta-note {
+  font-style: italic;
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--wine-soft);
+  font-size: 16px;
+}
+
+.pitch {
+  margin-bottom: 96px;
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.card h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 12px;
+  margin-left: -4px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--wine-soft);
+}
+
+footer {
+  padding-top: 48px;
+  border-top: 1px solid rgba(74, 27, 12, 0.1);
+  text-align: center;
+}
+
+.footer-tag {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  color: var(--wine);
+  margin-bottom: 24px;
+}
+
+.footer-links {
+  font-size: 14px;
+  color: var(--wine-soft);
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: var(--wine);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  margin: 0 8px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: var(--wine-soft);
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+}
