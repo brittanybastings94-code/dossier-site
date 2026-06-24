@@ -3,52 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Dossier — every trip deserves a dossier</title>
-  <meta name="description" content="The itinerary, dressed up. A trip-planning app for the group chat era.">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>The Dossier — your itinerary, dressed up</title>
+  <meta name="description" content="The itinerary, dressed up. Built for the trip you're already overthinking.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <p class="eyebrow">THE DOSSIER</p>
-      <h1>Every trip <em>deserves</em> a dossier.</h1>
-      <p class="subtitle">The itinerary, dressed up.</p>
-      <p class="lede">A trip-planning app for the group chat era. Outfits, places, agenda, and a shared map — finally somewhere editorial to file the chaos.</p>
-      <div class="cta">
-        <p class="cta-note">Coming soon to the App Store.</p>
+  <div class="page">
+    <aside class="logo-pane">
+      <div class="logo-wrap">
+        <span class="logo-d">d</span>
+        <span class="logo-dot"></span>
       </div>
-    </section>
+    </aside>
 
-    <section class="pitch">
-      <p class="eyebrow">WHAT'S IN THE DOSSIER</p>
-      <div class="grid">
-        <div class="card">
-          <h3>For the planning.</h3>
-          <p>A Pinterest-style outfit board for every occasion. Pin places to eat, drink, do, and stay. File flights and travel into the agenda. See everything on a shared map.</p>
-        </div>
-        <div class="card">
-          <h3>For the conversation.</h3>
-          <p>Every outfit, place, and agenda item has its own reactions and comments. So when someone says "love this," there's no question what they meant.</p>
-        </div>
-        <div class="card">
-          <h3>For the keeping.</h3>
-          <p>The dossier doesn't disappear when the trip ends. Open it next year and remember what you wore, where you ate, and what made everyone laugh.</p>
-        </div>
-      </div>
-    </section>
+    <main class="content-pane">
+      <section class="hero">
+        <p class="eyebrow">THE DOSSIER</p>
+        <h1>Your itinerary,<br><em>dressed up.</em></h1>
+        <p class="lede">A trip-planning app. For people who care what they pack, where they eat, and what time everyone lands.</p>
+        <p class="hero-note">Coming soon to the App Store.</p>
+      </section>
 
-    <footer>
-      <p class="footer-tag"><em>Every trip deserves a dossier.</em></p>
-      <p class="footer-links">
-        <a href="/privacy">Privacy</a>
-        <span>·</span>
-        <a href="/support">Support</a>
-        <span>·</span>
-        <a href="mailto:hi@dossierapp.co">hi@dossierapp.co</a>
-      </p>
-      <p class="footer-copy">© 2026 Hive Holdings Limited</p>
-    </footer>
-  </main>
+      <section class="phones">
+        <p class="eyebrow-small">FILED, NOT LOST</p>
+        <div class="phones-row">
+
+          <!-- PHONE 1: Trip home screen -->
+          <div class="phone phone-1">
+            <div class="phone-screen trip-home">
+              <div class="trip-hero">
+                <div class="trip-hero-img"></div>
+                <div class="trip-hero-fade"></div>
+                <div class="trip-hero-text">
+                  <div class="trip-hero-title">Hannah's<br><em>hen.</em></div>
+                  <div class="trip-hero-loc">New York</div>
+                </div>
+              </div>
+              <div class="trip-body">
+                <div class="trip-pill">11 DAYS TO GO</div>
+                <div class="trip-section-label"><em>In the dossier</em></div>
+                <div class="trip-stats">
+                  <div class="trip-stat"><div class="trip-stat-num"><em>22</em></div><div class="trip-stat-label">outfits</div></div>
+                  <div class="trip-stat"><div class="trip-stat-num"><em>17</em></div><div class="trip-stat-label">places</div></div>
+                  <div class="trip-stat"><div class="trip-stat-num"><em>8</em></div><div class="trip-stat-label">agenda</div></div>
+                </div>
+                <div class="trip-section-label trip-coming"><em>Coming up</em></div>
+                <div class="trip-event">
+                  <div class="trip-event-time">FRI · 7PM</div>
+                  <div class="trip-event-name">Welcome drinks at Dante</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHONE 2: Outfit board (Pinterest masonry) -->
+          <div class="phone phone-2">
+            <div class="phone-screen outfit-board">
+              <div class="ob-header">
+                <div class="ob-eyebrow">ALI &amp; FRED'S WEDDING</div>
+                <div class="ob-title"><em>Outfits</em></div>
+              </div>
+              <div class="ob-chips">
+                <div class="ob-chip ob-chip-active">Everyone</div>
+                <div class="ob-chip"><span class="dot dot-magenta"></span>You</div>
+                <div class="ob-chip"><span class="dot dot-blue"></span>Sarah</div>
+              </div>
+              <div class="ob-grid">
+                <div class="ob-card ob-card-tall">
+                  <div class="ob-img ob-img-1"></div>
+                  <div class="ob-tag">Welcome dinner</div>
+                </div>
+                <div class="ob-card">
+                  <div class="ob-img ob-img-2"></div>
+                  <div class="ob-tag">Ceremony</div>
+                </div>
+                <div class="ob-card">
+                  <div class="ob-img ob-img-3"></div>
+                  <div class="ob-tag">Reception</div>
+                </div>
+                <div class="ob-card ob-card-tall">
+                  <div class="ob-img ob-img-4"></div>
+                  <div class="ob-tag">Brunch</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHONE 3: Map view -->
+          <div class="phone phone-3">
+            <div class="phone-screen map-view">
+              <div class="map-bg"></div>
+              <div class="map-streets street-1"></div>
+              <div class="map-streets street-2"></div>
+              <div class="map-streets street-3"></div>
+              <div class="map-water"></div>
+              <div class="map-pin pin-1">🍴</div>
+              <div class="map-pin pin-2">🥂</div>
+              <div class="map-pin pin-3">🎯</div>
+              <div class="map-pin pin-4">🛏</div>
+              <div class="map-pin pin-5">🍴</div>
+              <div class="map-header">
+                <div class="map-eyebrow">HONG KONG</div>
+                <div class="map-title"><em>The map</em></div>
+              </div>
+              <div class="map-chips">
+                <div class="map-chip map-chip-active">All</div>
+                <div class="map-chip">Eat</div>
+                <div class="map-chip">Stay</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3><em>Outfits.</em></h3>
+          <p>Pinned by occasion. Visible to everyone.</p>
+        </div>
+        <div class="feature">
+          <h3><em>Places.</em></h3>
+          <p>Eat. Drink. Do. Stay. All on the map.</p>
+        </div>
+        <div class="feature">
+          <h3><em>Agenda.</em></h3>
+          <p>Every flight. Every dinner. Every move.</p>
+        </div>
+      </section>
+
+      <section class="close">
+        <h2>Built for the trip you're <em>already overthinking.</em></h2>
+        <p class="close-note">Coming soon to the App Store.</p>
+      </section>
+
+      <footer>
+        <p class="footer-tag"><em>The itinerary, dressed up.</em></p>
+        <p class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <span>·</span>
+          <a href="/support">Support</a>
+          <span>·</span>
+          <a href="mailto:hi@dossierapp.co">hi@dossierapp.co</a>
+        </p>
+        <p class="footer-copy">© 2026 Hive Holdings Limited</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
