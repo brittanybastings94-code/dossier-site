@@ -43,7 +43,7 @@ html, body {
 .logo-wrap {
   position: relative;
   display: inline-flex;
-  align-items: flex-end;
+  align-items: flex-start;
   line-height: 1;
 }
 
@@ -62,8 +62,9 @@ html, body {
   height: 7vh;
   background: var(--coral);
   border-radius: 50%;
-  margin-left: 3vh;
-  margin-bottom: 4vh;
+  margin-top: 12vh;
+  margin-left: -2vh;
+  align-self: flex-start;
   flex-shrink: 0;
 }
 
@@ -120,6 +121,14 @@ h1 em {
   max-width: 480px;
 }
 
+.hero-note {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  color: var(--wine-soft);
+  font-size: 16px;
+  margin-left: -4px;
+}
+
 /* Phones */
 .phones { margin-bottom: 120px; }
 
@@ -151,344 +160,12 @@ h1 em {
   position: relative;
 }
 
-/* ============================== */
-/* PHONE 1: Trip Home Screen */
-/* ============================== */
-.trip-home { display: flex; flex-direction: column; }
-
-.trip-hero {
-  position: relative;
+/* Real app screenshots fill each phone */
+.screen-img {
   width: 100%;
-  height: 45%;
-  background: linear-gradient(135deg, #C8956D 0%, #8B6B47 50%, #5A4332 100%);
-  flex-shrink: 0;
-}
-
-.trip-hero-img {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 30% 35%, rgba(255, 200, 100, 0.6) 0%, transparent 35%),
-    radial-gradient(circle at 70% 60%, rgba(180, 120, 80, 0.4) 0%, transparent 50%);
-}
-
-.trip-hero-fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.5) 100%);
-}
-
-.trip-hero-text {
-  position: absolute;
-  bottom: 10px;
-  left: 12px;
-  right: 12px;
-  color: var(--cream);
-}
-
-.trip-hero-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 18px;
-  line-height: 1.05;
-  margin-left: -2px;
-}
-
-.trip-hero-title em { font-style: italic; }
-
-.trip-hero-loc {
-  font-size: 9px;
-  opacity: 0.85;
-  margin-top: 2px;
-}
-
-.trip-body { padding: 12px; flex: 1; display: flex; flex-direction: column; }
-
-.trip-pill {
-  display: inline-block;
-  background: var(--coral);
-  color: var(--cream);
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 8px;
-  letter-spacing: 0.14em;
-  padding: 5px 10px;
-  border-radius: 100px;
-  align-self: flex-start;
-  margin-bottom: 14px;
-}
-
-.trip-section-label {
-  font-family: 'Fraunces', Georgia, serif;
-  font-style: italic;
-  font-size: 9px;
-  color: var(--wine-soft);
-  margin-left: -2px;
-  margin-bottom: 6px;
-}
-
-.trip-coming { margin-top: 12px; }
-
-.trip-stats { display: flex; gap: 4px; margin-bottom: 4px; }
-
-.trip-stat {
-  flex: 1;
-  background: white;
-  border-radius: 8px;
-  padding: 8px 4px;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(74,27,12,0.04);
-}
-
-.trip-stat-num {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 18px;
-  color: var(--coral);
-  line-height: 1;
-  margin-bottom: 2px;
-}
-
-.trip-stat-num em { font-style: italic; }
-
-.trip-stat-label { font-size: 8px; color: var(--wine); }
-
-.trip-event {
-  background: white;
-  border-radius: 8px;
-  padding: 8px 10px;
-  box-shadow: 0 1px 4px rgba(74,27,12,0.04);
-}
-
-.trip-event-time {
-  font-size: 8px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--coral);
-  margin-bottom: 2px;
-}
-
-.trip-event-name {
-  font-size: 10px;
-  color: var(--wine);
-  line-height: 1.2;
-}
-
-/* ============================== */
-/* PHONE 2: Outfit Board */
-/* ============================== */
-.outfit-board { padding: 16px 12px 12px; display: flex; flex-direction: column; }
-
-.ob-header { margin-bottom: 12px; }
-
-.ob-eyebrow {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 7px;
-  letter-spacing: 0.18em;
-  color: var(--coral);
-  margin-bottom: 4px;
-}
-
-.ob-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 22px;
-  margin-left: -2px;
-  color: var(--wine);
-}
-
-.ob-title em { font-style: italic; }
-
-.ob-chips {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 12px;
-}
-
-.ob-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  padding: 4px 8px;
-  border-radius: 100px;
-  font-size: 8px;
-  font-weight: 500;
-  border: 1px solid rgba(74,27,12,0.15);
-  color: var(--wine);
-}
-
-.ob-chip-active {
-  background: var(--wine);
-  color: var(--cream);
-  border-color: var(--wine);
-}
-
-.dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot-magenta { background: var(--magenta); }
-.dot-blue { background: var(--blue); }
-
-.ob-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-  flex: 1;
-}
-
-.ob-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 2px 6px rgba(74,27,12,0.06);
-}
-
-.ob-card-tall { grid-row: span 1; }
-
-.ob-img {
-  flex: 1;
-  min-height: 56px;
-}
-
-.ob-img-1 { background: linear-gradient(135deg, #E8D5C4 0%, #B08968 100%); }
-.ob-img-2 { background: linear-gradient(135deg, #F2E4D7 0%, #C29B7C 100%); }
-.ob-img-3 { background: linear-gradient(135deg, #D4A574 0%, #8B5A3C 100%); }
-.ob-img-4 { background: linear-gradient(135deg, #E5C9A8 0%, #A07855 100%); }
-
-.ob-tag {
-  font-size: 8px;
-  color: var(--wine);
-  padding: 4px 6px;
-  border-top: 1px solid rgba(74,27,12,0.06);
-}
-
-/* ============================== */
-/* PHONE 3: Map View */
-/* ============================== */
-.map-view { position: relative; }
-
-.map-bg {
-  position: absolute;
-  inset: 0;
-  background: var(--map-green);
-}
-
-.map-streets {
-  position: absolute;
-  background: rgba(255,255,255,0.5);
-}
-
-.street-1 {
-  top: 30%;
-  left: -10%;
-  right: -10%;
-  height: 4px;
-  transform: rotate(-8deg);
-}
-
-.street-2 {
-  top: 55%;
-  left: -10%;
-  right: -10%;
-  height: 3px;
-  transform: rotate(4deg);
-}
-
-.street-3 {
-  top: 0;
-  bottom: 0;
-  left: 40%;
-  width: 3px;
-  transform: rotate(12deg);
-}
-
-.map-water {
-  position: absolute;
-  bottom: -20%;
-  right: -30%;
-  width: 80%;
-  height: 50%;
-  background: var(--map-water);
-  border-radius: 50% 30% 0 0;
-  transform: rotate(-15deg);
-}
-
-.map-pin {
-  position: absolute;
-  background: var(--coral);
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 9px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-  border: 2px solid white;
-}
-
-.pin-1 { top: 38%; left: 22%; background: #E07A3E; }
-.pin-2 { top: 25%; left: 60%; background: #E89BA0; }
-.pin-3 { top: 50%; left: 38%; background: var(--coral); }
-.pin-4 { top: 65%; left: 70%; background: var(--wine); }
-.pin-5 { top: 70%; left: 30%; background: #E07A3E; }
-
-.map-header {
-  position: absolute;
-  top: 14px;
-  left: 12px;
-  z-index: 2;
-}
-
-.map-eyebrow {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 7px;
-  letter-spacing: 0.18em;
-  color: var(--coral);
-  background: rgba(250, 236, 231, 0.92);
-  padding: 3px 6px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-.map-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 18px;
-  margin-left: -2px;
-  color: var(--wine);
-  background: rgba(250, 236, 231, 0.92);
-  padding: 2px 6px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.map-title em { font-style: italic; }
-
-.map-chips {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  display: flex;
-  gap: 4px;
-}
-
-.map-chip {
-  background: rgba(250, 236, 231, 0.95);
-  padding: 4px 8px;
-  border-radius: 100px;
-  font-size: 8px;
-  color: var(--wine);
-}
-
-.map-chip-active {
-  background: var(--wine);
-  color: var(--cream);
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Features */
@@ -565,7 +242,7 @@ footer { padding-top: 32px; border-top: 1px solid rgba(74, 27, 12, 0.08); }
   }
 
   .logo-d { font-size: 44vh; }
-  .logo-dot { width: 5vh; height: 5vh; margin-left: 2vh; margin-bottom: 3vh; }
+  .logo-dot { width: 5vh; height: 5vh; margin-top: 9vh; }
 
   .content-pane { margin-left: 0; width: 100vw; padding: 48px 24px; }
 
