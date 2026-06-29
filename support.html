@@ -2,16 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — The Dossier</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Support and help for The Dossier, a group trip-planning app.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --cream: #FAECE7; --coral: #D85A30; --wine: #4A1B0C; --wine-soft: rgba(74, 27, 12, 0.72); }
+    html, body { background: var(--cream); color: var(--wine); font-family: 'Inter', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+    .eyebrow { font-weight: 600; font-size: 12px; letter-spacing: 0.22em; color: var(--coral); text-transform: uppercase; margin-bottom: 20px; }
+    h1 { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(40px, 7vw, 60px); line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 24px; margin-left: -2px; }
+    h2 { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 500; font-size: 22px; margin: 36px 0 10px; }
+    p { color: var(--wine-soft); font-size: 16px; margin-bottom: 14px; }
+    a { color: var(--coral); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--wine); font-weight: 600; }
+    .back { display: inline-block; margin-top: 48px; font-size: 14px; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(74,27,12,0.1); font-size: 12px; color: rgba(74,27,12,0.5); }
+  </style>
 </head>
 <body>
-  <main>
-    <p class="eyebrow">THE DOSSIER</p>
+  <main class="wrap">
+    <p class="eyebrow">The Dossier</p>
     <h1>Support.</h1>
-    <p class="lede">Need help? Email <a href="mailto:hi@dossierapp.co">hi@dossierapp.co</a>.</p>
-    <p style="margin-top: 32px;"><a href="/">Back home</a></p>
+
+    <p>Need a hand with The Dossier? We're happy to help. Email us at <a href="mailto:hi@dossierapp.co">hi@dossierapp.co</a> and we'll get back to you.</p>
+
+    <h2>Common questions</h2>
+    <p><strong>How do I sign in?</strong><br>The Dossier uses a magic link. Enter your email and we'll send you a one-time code to sign in — no password to remember.</p>
+    <p><strong>How do I invite people to a trip?</strong><br>Open a trip, tap invite, and share the link. Anyone you invite can see and add to that trip's outfits, places and agenda.</p>
+    <p><strong>How do I delete my account?</strong><br>Email <a href="mailto:hi@dossierapp.co">hi@dossierapp.co</a> and we'll remove your account and the information associated with it.</p>
+
+    <h2>Privacy</h2>
+    <p>You can read how we handle your information in our <a href="/privacy">Privacy Policy</a>.</p>
+
+    <a class="back" href="/">‹ Back home</a>
+    <footer>© 2026 Hive Holdings Limited</footer>
   </main>
 </body>
 </html>
